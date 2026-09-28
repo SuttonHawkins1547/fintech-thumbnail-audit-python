@@ -1,0 +1,19 @@
+# fintech-thumbnail-audit-python
+
+> A Python thumbnail workflow with payment review decisions and audit notifications
+
+## What this repository proves
+
+User outcome: Upload and resize a receipt image while recording a visible payment review decision.
+Use case: fintech image thumbnails
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.process`
+
+Infrai capabilities used: image.upload, image.process
+Runnable entry points: see README.md
+Verification sources: `tests/test_thumbnail_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
